@@ -6,15 +6,23 @@
 ![Error Rate](https://img.shields.io/badge/Error%20Rate-18.24%25-critical)
 ![Target](https://img.shields.io/badge/Target-UniReg%20Cloud%20on%20Vercel-lightgrey?logo=vercel)
 
-> A k6 load test of the **final registration journey** of a multi-tenant university registration portal. It repeats the JMeter test (Task 3) with k6 so the two tools can be compared, and it confirms the same session failure under load.
+> A k6 load test of the **final registration journey** of a multi-tenant university registration portal. It repeats an earlier JMeter test with k6 so the two tools can be compared, and it confirms the same session failure under load.
 
-Companion project (JMeter, Task 3): [unireg-cloud-jmeter-performance-testing](https://github.com/tawsif5001/unireg-cloud-jmeter-performance-testing)
+Companion project (JMeter): [unireg-cloud-jmeter-performance-testing](https://github.com/tawsif5001/unireg-cloud-jmeter-performance-testing)
 
 ## 📋 Overview
 
 UniReg Cloud is a SaaS registration system that serves three universities (35,000 students) from one shared backend. Final registration is the riskiest moment of the semester: seats are limited, first come first served, and thousands of students log in within minutes.
 
 This project tests that journey with k6. Each virtual student logs in with its own account, opens a random course from its own university, pauses like a human between clicks, and checks every response.
+
+## 🎯 Business Context
+
+- Final registration opens at a fixed time and seats are **first come, first served**
+- In the previous semester the portal **slowed down and showed error pages** during the rush
+- Students of one university were affected by the rush at another
+- The platform **adds servers automatically** when load rises, but a new server takes about 4 minutes to start
+- Every university expects **20% more students** next semester
 
 ## 📏 Requirements Under Test
 
@@ -67,8 +75,8 @@ Each page is wrapped in a k6 `group`, so its time is measured as one step. Think
 |---------|-------|--------|
 | Virtual users | **10** | One per test account. The portal allows one session per account, so more users would make two users share an account and log each other out. |
 | Ramp-up | **30 s** | One new student every 3 s, so the servers warm up gradually instead of all users hitting cold servers at once. |
-| Duration | **300 s** | The passage says a typical student stays online for about 5 minutes. Same as the JMeter test. |
-| Think time | **5 to 10 s** | The passage says students pause 5 to 10 seconds between clicks. |
+| Duration | **300 s** | A typical student stays online for about 5 minutes during final registration. Same as the JMeter test. |
+| Think time | **5 to 10 s** | Real students pause 5 to 10 seconds between clicks. |
 
 ```
 Users
@@ -113,9 +121,12 @@ This is a **scaled-down baseline at about 0.12% of the target load (1 : 840)**. 
 └── README.md
 ```
 
-## 🚀 How to Run
+## ⚙️ Prerequisites
 
-Prerequisites: k6 v1.0 or later, and internet access to `https://uni-reg-cloud.vercel.app`.
+- Grafana k6 v1.0 or later
+- Internet access to `https://uni-reg-cloud.vercel.app`
+
+## 🚀 How to Run
 
 Quick check (1 user, 1 journey):
 
@@ -157,6 +168,8 @@ Open `results/k6-report.html` in a browser to see the graphs.
 | Iterations | 79 complete, 1 interrupted at the end of the test |
 
 ![Run command and result](docs/images/01_run_command_and_result.png)
+
+*Final run summary: R2 thresholds pass for every page, the R3 error rate threshold fails.*
 
 ![Report overview with virtual users over time](docs/images/02_report_overview.png)
 
@@ -219,7 +232,7 @@ Speed is **not** the problem. The failures are all `401 {"error":"unauthorized"}
 | **Sessions stored in the memory of serverless instances** | `Server: Vercel`; latency and failure spikes line up at least once; an exploratory run without ramp-up had far more errors |
 | **Other clients using the same shared demo accounts** | Errors come in bursts unrelated to our own load; the first error came at 17 s, before all 10 users were active |
 
-These two causes cannot be separated from the client side. Server logs are needed to confirm.
+These two causes cannot be separated from the client side. Server logs are needed to confirm. Stating this clearly is part of the result: the test shows where the problem is **not** (speed, capacity, the script), and points to where to look next.
 
 ## ⚖️ Comparison with JMeter
 
@@ -256,11 +269,25 @@ Before the final run, the script was built and checked in several shorter explor
 - Keep a ramp-up or queue at registration opening, since a sudden rush slowed the portal sharply
 - Run a spike test and a multi-tenant isolation test next, at a larger scale with more test accounts
 
-## 🔒 Notes
+## 🔒 Security and Maintenance Notes
 
 - The accounts in `data/users.csv` are public demo accounts for a test deployment
+- Never commit production credentials or live tokens
 - Tokens are captured at runtime and never stored in the script
 - Load was kept at 10 users to stay within the limit of a shared environment
+
+## 💼 Project Context
+
+This is a case study based on a training scenario and a demo deployment of the application. It focuses on performance engineering with Grafana k6: workload modelling, correlation, parameterization, checks, thresholds, HTML reporting, and evidence-based analysis of failures.
+
+## 🎓 What I Learned
+
+- Writing a k6 test in JavaScript, from a single request to a full user journey
+- Correlating a dynamic token and building tenant-aware test data
+- Using checks and thresholds so that a green result really means a correct result
+- Handling failures in the script so one error does not crash the journey or create fake errors
+- Reading k6 graphs to connect response time spikes with failure spikes
+- Comparing two tools on the same scenario to show that a problem belongs to the system, not the test
 
 ## 👨‍💻 Author
 
