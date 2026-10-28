@@ -1,0 +1,100 @@
+[36mINFO[0m[0017] Course detail failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0025] Course detail failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0028] My registration failed for A2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0029] Course detail failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0031] My registration failed for A2026005 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0032] Course detail failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0034] My registration failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0036] Logout failed for A2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0039] Logout failed for A2026005 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0039] My registration failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0040] My registration failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0044] Logout failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0052] Course detail failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0052] My registration failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0053] My registration failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0056] My registration failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0058] My registration failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0064] Course detail failed for A2026005 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0067] My registration failed for A2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0073] My registration failed for A2026005 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0073] Logout failed for A2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0081] Course detail failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0082] My registration failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0085] Course detail failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0086] Logout failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0086] Course detail failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0086] My registration failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0087] My registration failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0089] Course detail failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0090] Logout failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0090] Logout failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0092] My registration failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0094] My registration failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0094] Logout failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0096] Logout failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0096] My registration failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0098] Logout failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0101] Logout failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0102] Logout failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0112] Course detail failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0119] Course detail failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0128] Course detail failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0138] My registration failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0143] Logout failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0158] Course list failed for A2026004 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0161] Logout failed for A2026005 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0161] My registration failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0161] Course detail failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0163] Logout failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0164] My registration failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0164] My registration failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0164] My registration failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0167] Logout failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0172] My registration failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0172] Logout failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0172] Logout failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0173] Logout failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0179] Logout failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0205] Logout failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0205] Course detail failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0205] Course detail failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0206] Logout failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0207] Logout failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0207] My registration failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0212] My registration failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0213] Logout failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0214] Logout failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0214] My registration failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0222] Logout failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0223] Course list failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0224] Course detail failed for A2026005 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0233] Course detail failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0238] Course list failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0241] My registration failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0243] Logout failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0243] Logout failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0244] Course detail failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0250] Logout failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0250] Course detail failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0253] My registration failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0259] My registration failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0259] Logout failed for B2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0264] Logout failed for A2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0272] My registration failed for A2026005 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0275] My registration failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0276] My registration failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0276] My registration failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0278] My registration failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0278] Logout failed for A2026005 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0279] My registration failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0281] Logout failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0282] Logout failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0283] Logout failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0285] Logout failed for A2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0287] Logout failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0298] Course list failed for B2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0320] My registration failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0323] Logout failed for B2026003 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0323] Logout failed for C2026001 | status: 401 | body: {"error":"unauthorized"} 
+[36mINFO[0m[0326] Logout failed for C2026002 | status: 401 | body: {"error":"unauthorized"} 
